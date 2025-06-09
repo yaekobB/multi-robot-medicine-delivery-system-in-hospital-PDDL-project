@@ -1,146 +1,224 @@
-■ PART 1: LPG++ INSTALLATION (PDDL 2.1 Numeric) ■
+# PDDL Planners Installation and Usage Guide
 
-STEP 1: System Setup
----------------------
-A. For WSL (Windows Users):
-   1. Check WSL installation:
-      > wsl --list --verbose
-      * Expected output:
-        NAME      STATE           VERSION
-        * Ubuntu    Running         2
+This guide provides step-by-step instructions for installing and using two PDDL planners: **LPG++** (for PDDL 2.1 Numeric) and **ENHSP** (for PDDL+). It supports both Windows (via WSL) and native Linux (Ubuntu/Debian) environments.
 
-   2. If not installed:
-      > wsl --install
-      > wsl --set-default-version 2
+## Table of Contents
+1. [Prerequisites](#prerequisites)
+2. [LPG++ Installation (PDDL 2.1 Numeric)](#lpg-installation)
+   - [System Setup](#system-setup)
+   - [Toolchain Installation](#toolchain-installation)
+   - [Source Download](#source-download)
+   - [Compilation](#compilation)
+   - [Verification](#verification)
+   - [First Run](#first-run)
+3. [ENHSP Installation (PDDL+)](#enhsp-installation)
+   - [System Setup](#enhsp-system-setup)
+   - [Java Installation](#java-installation)
+   - [Compilation](#enhsp-compilation)
+   - [Usage](#enhsp-usage)
+4. [Ubuntu Direct Installation](#ubuntu-direct-installation)
+5. [Troubleshooting](#troubleshooting)
+6. [Notes](#notes)
 
-   3. Launch WSL terminal:
-      > wsl
+## Prerequisites
+- **Operating System**: Ubuntu/Debian (native) or Windows with WSL2.
+- **Hardware**: Minimum 4GB RAM, 2GB free disk space.
+- **Software**:
+  - For LPG++: `g++`, `make`, `git`.
+  - For ENHSP: OpenJDK 17 (JRE and JDK).
+- **PDDL Files**: Ensure you have valid `domain.pddl` and `problem.pddl` files for testing.
 
-B. For Linux (Native Ubuntu/Debian):
-   * Skip WSL steps if using native Linux
+## LPG++ Installation (PDDL 2.1 Numeric)
 
-STEP 2: Toolchain Installation
-------------------------------
-1. Update packages:
-   > sudo apt update && sudo apt upgrade -y
+### System Setup
+#### For Windows (WSL2)
+1. **Check WSL Installation**:
+   ```bash
+   wsl --list --verbose
+   ```
+   Expected output:
+   ```
+     NAME      STATE           VERSION
+     * Ubuntu    Running         2
+   ```
+2. **Install WSL2** (if not installed):
+   ```bash
+   wsl --install
+   wsl --set-default-version 2
+   ```
+3. **Launch WSL Terminal**:
+   ```bash
+   wsl
+   ```
 
-2. Install essential tools (both WSL and Linux):
-   > sudo apt install g++ make git
+#### For Native Linux (Ubuntu/Debian)
+- Skip WSL steps and proceed to the next section.
 
-3. Verify installations:
-   > g++ --version  # Should show GCC 9+
-   > make --version # Should show GNU Make 4+
+### Toolchain Installation
+1. **Update Packages**:
+   ```bash
+   sudo apt update && sudo apt upgrade -y
+   ```
+2. **Install Essential Tools**:
+   ```bash
+   sudo apt install g++ make git -y
+   ```
+3. **Verify Installations**:
+   ```bash
+   g++ --version  # Should show GCC 9+ (e.g., 9.4.0)
+   make --version  # Should show GNU Make 4+ (e.g., 4.3)
+   ```
 
-STEP 3: Source Download
------------------------
-1. Clone repository:
-   > git clone https://github.com/matteocarde/unige-aai.git
+### Source Download
+1. **Clone Repository**:
+   ```bash
+   git clone https://github.com/matteocarde/unige-aai.git
+   ```
+2. **Navigate to LPG Directory**:
+   ```bash
+   cd unige-aai/planners/LPG
+   ```
 
-2. Navigate to LPG directory:
-   > cd unige-aai/planners/LPG
+### Compilation
+1. **Clean Previous Builds** (if any):
+   ```bash
+   make clean
+   ```
+2. **Compile LPG++**:
+   ```bash
+   make
+   ```
+3. **Verify Compilation**:
+   ```bash
+   ls -l lpg++
+   ```
+   Expected output:
+   ```
+   -rwxr-xr-x 1 user group [file_size] lpg++
+   ```
 
-STEP 4: Compilation
--------------------
-1. Clean previous builds (if any):
-   > make clean
+### Verification
+1. **Test Executable**:
+   ```bash
+   ./lpg++ --help
+   ```
+   - Should display usage instructions with PDDL 2.1 options.
+2. **Check Version** (optional):
+   ```bash
+   ./lpg++ --version
+   ```
+   - Should display version information.
 
-2. Compile LPG++:
-   > make
+### First Run
+Run LPG++ with your PDDL files:
+```bash
+./lpg++ -o domain.pddl -f problem.pddl -out plan.txt
+```
+- Ensure `domain.pddl` and `problem.pddl` are in the current directory.
+- For WSL, access Windows files via `/mnt/c/path_to_files/`.
 
-3. Verify successful compilation:
-   > ls -l lpg++
-   * Correct output format:
-     -rwxr-xr-x 1 user group [file_size] lpg++
+## ENHSP Installation (PDDL+)
 
-STEP 5: Basic Verification
--------------------------
-1. Test executable functionality:
-   > ./lpg++ --help
-   * Expected: Shows usage instructions with PDDL2.1 options
+### ENHSP System Setup
+#### For Windows (WSL2)
+1. **Check WSL**:
+   ```bash
+   wsl --list --verbose
+   ```
+2. **Enter WSL**:
+   ```bash
+   wsl
+   ```
+3. **Update Packages**:
+   ```bash
+   sudo apt update && sudo apt upgrade -y
+   ```
 
-2. Quick test (optional):
-   > ./lpg++ --version
-   * Should display version info
+#### For Native Linux
+- Skip WSL steps.
 
-STEP 6: First Run
------------------
-Basic execution command:
-> ./lpg++ -o domain.pddl -f problem.pddl -out plan.txt
+### Java Installation
+1. **Install OpenJDK 17**:
+   ```bash
+   sudo apt install openjdk-17-jre openjdk-17-jdk -y
+   ```
+2. **Verify Java**:
+   ```bash
+   java -version
+   ```
+   Expected output:
+   ```
+   openjdk 17.x.x
+   ```
 
-* Notes:
-  - Place domain/problem files in current directory
-  - For WSL: Access Windows files via /mnt/c/path_to_files/
+### ENHSP Compilation
+1. **Clone Repository**:
+   ```bash
+   git clone https://gitlab.com/enricos83/ENHSP-Public.git
+   cd ENHSP-Public
+   ```
+2. **Compile ENHSP**:
+   ```bash
+   ./compile
+   ```
+3. **Verify Compilation**:
+   ```bash
+   ls enhsp-dist/enhsp.jar
+   ```
+   - Should confirm the presence of `enhsp.jar`.
 
+### ENHSP Usage
+1. **Basic Execution**:
+   ```bash
+   java -jar enhsp-dist/enhsp.jar -o "domain.pddl" -f "problem.pddl"
+   ```
+2. **Save Plan to File**:
+   ```bash
+   java -jar enhsp-dist/enhsp.jar -o "domain.pddl" -f "problem.pddl" -sp plan.txt
+   ```
+3. **Alternative Planners**:
+   - Using `PDDL + With Battery`:
+     ```bash
+     java -Xmx6G -jar enhsp-20.jar -o "domain" -f "problem" -d 1.5 -s WAStar -h hmax -anytime -timeout 9000
+     ```
+**Search Configuration**:
 
-■ PART 2: ENHSP INSTALLATION (PDDL+) ■
-
-STEP 1: WSL Setup (Windows Only)
---------------------------------
-1. Check WSL:
-   > wsl --list --verbose
-2. Enter WSL:
-   > wsl
-3. Update:
-   > sudo apt update && sudo apt upgrade -y
-
-STEP 2: Java Installation
--------------------------
-1. Install JDK 17:
-   > sudo apt install openjdk-17-jre openjdk-17-jdk
-2. Verify:
-   > java -version
-   (Should show "openjdk 17.x.x")
-
-STEP 3: ENHSP Compilation
--------------------------
-1. Clone repository:
-   > git clone https://gitlab.com/enricos83/ENHSP-Public.git
-   > cd ENHSP-Public
-2. Compile:
-   > ./compile
-   (Check for enhsp.jar in enhsp-dist folder)
-
-STEP 4: Usage
--------------
-1. Basic execution:
-   > java -jar enhsp-dist/enhsp.jar -o domain.pddl -f problem.pddl -planner sat-had
-
-2. Save plan:
-   > java -jar enhsp-dist/enhsp.jar -o domain.pddl -f problem.pddl -sp plan.txt
-
-3. Alternative planners:
-   > java -jar enhsp-dist/enhsp.jar -o domain.pddl -f problem.pddl -planner sat-hmax
-   > java -jar enhsp-dist/enhsp.jar -o domain.pddl -f problem.pddl -planner sat-aibr
-
-
-■ PART 3: UBUNTU DIRECT INSTALLATION ■
-
-For native Ubuntu (skip WSL steps if using this):
-
-1. Install Java:
-   > sudo apt update
-   > sudo apt install openjdk-17-jre openjdk-17-jdk
-
-2. Follow ENHSP compilation steps from PART 2
-
-
-■ VERIFICATION CHECKS ■
------------------------
-1. LPG++:
-   > file lpg++ (should show "ELF executable")
-   > ./lpg++ --help (should display help)
-
-2. ENHSP:
-   > java -version (must show Java 17+)
-   > ls enhsp-dist/enhsp.jar (should exist)
+- d 1.5 : ```bash Sets the discount factor to 1.5. This parameter influences the cost calculation in the search algorithm, giving more weight to immediate actions versus future actions.```
+- s WAStar : ```bash Selects the Weighted A* (WA*) search algorithm. This is an anytime algorithm that finds solutions quickly and then iteratively improves them.```
+- h hmax : ```bash Uses the hmax heuristic function. This heuristic provides an admissible estimate of the remaining cost to reach the goal state, helping guide the search efficiently.```
 
 
-■ NOTES ■
----------
-• Replace domain.pddl/problem.pddl with your files
-• Windows users access files via: /mnt/c/your_path/
-• Timeout handling: Add "-t 300" for 5-minute timeout
+**Optimization Settings**
 
-============================================
-END OF GUIDE
-============================================
+- anytime : ```bash Enables anytime search mode. The planner will find an initial solution quickly and then continue to search for better solutions until the timeout is reached.```
+- timeout 9000 : ```bash Sets the maximum execution time to 9000 seconds (2.5 hours). The planner will terminate after this time limit, returning the best solution found.```
+
+## Ubuntu Direct Installation
+For native Ubuntu/Debian users (no WSL):
+1. **Install Java**:
+   ```bash
+   sudo apt update
+   sudo apt install openjdk-17-jre openjdk-17-jdk -y
+   ```
+2. **Follow ENHSP Compilation and Usage**:
+   - Refer to the [ENHSP Installation](#enhsp-installation) section, starting from [Java Installation](#java-installation).
+
+## Troubleshooting
+- **LPG++ Compilation Fails**:
+  - Ensure `g++` and `make` are installed (`sudo apt install g++ make`).
+  - Check for missing dependencies in the repository’s documentation.
+- **ENHSP: `java` Command Not Found**:
+  - Verify Java installation (`java -version`).
+  - Reinstall OpenJDK if needed (`sudo apt install openjdk-17-jre openjdk-17-jdk`).
+- **File Access Issues in WSL**:
+  - Use `/mnt/c/path_to_files/` to access Windows files.
+  - Ensure correct file permissions (`chmod +r domain.pddl problem.pddl`).
+- **Timeout Issues**:
+  - Add `-t 300` to limit execution to 5 minutes (e.g., `./lpg++ -o domain.pddl -f problem.pddl -t 300`).
+
+## Notes
+- Replace `domain.pddl` and `problem.pddl` with your actual PDDL file names.
+- For WSL, access Windows files via `/mnt/c/your_path/`.
+- Ensure sufficient memory and CPU resources for large PDDL problems.
+- Check repository documentation for additional planner options or updates.
+- For ENHSP, experiment with different planners (`sat-had`, `sat-hmax`) based on your problem’s complexity.
