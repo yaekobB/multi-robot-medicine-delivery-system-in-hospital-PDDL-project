@@ -1,0 +1,56 @@
+Found Plan:
+0: (start_move robot1 robot_room storage)
+0: -----waiting---- [3.0]
+3.0: (load_med robot1 med6)
+3.0: (load_med robot1 med7)
+3.0: (load_med robot1 med8)
+3.0: (load_med robot1 med5)
+3.0: (enter_elevator robot1 elevator1 storage floor0)
+3.0: (start_elevator_move elevator1 floor0 floor1)
+3.0: -----waiting---- [9.0]
+9.0: (start_elevator_move elevator1 floor1 floor2)
+9.0: -----waiting---- [15.0]
+15.0: (exit_elevator robot1 elevator1 room2_1 floor2)
+15.0: (deliver_med robot1 med5 patient5 room2_1)
+15.0: (start_move robot1 room2_1 room2_2)
+15.0: -----waiting---- [18.0]
+18.0: (deliver_med robot1 med6 patient6 room2_2)
+18.0: (start_move robot1 room2_2 room2_3)
+18.0: -----waiting---- [21.0]
+21.0: (deliver_med robot1 med7 patient7 room2_3)
+21.0: (start_move robot1 room2_3 room2_4)
+21.0: -----waiting---- [24.0]
+24.0: (deliver_med robot1 med8 patient8 room2_4)
+24.0: (enter_elevator robot1 elevator1 room2_4 floor2)
+24.0: (start_elevator_move elevator1 floor2 floor1)
+24.0: -----waiting---- [30.0]
+30.0: (start_elevator_move elevator1 floor1 floor0)
+30.0: -----waiting---- [36.0]
+36.0: (exit_elevator robot1 elevator1 robot_room floor0)
+36.0: (start_charging robot1)
+36.0: -----waiting---- [51.0]
+51.0: (stop_charging robot1)
+51.0: (start_move robot1 robot_room storage)
+51.0: -----waiting---- [54.0]
+54.0: (load_med robot1 med4)
+54.0: (load_med robot1 med3)
+54.0: (load_med robot1 med2)
+54.0: (load_med robot1 med1)
+54.0: (enter_elevator robot1 elevator1 storage floor0)
+54.0: (start_elevator_move elevator1 floor0 floor1)
+54.0: -----waiting---- [60.0]
+60.0: (exit_elevator robot1 elevator1 room1_1 floor1)
+60.0: (deliver_med robot1 med1 patient1 room1_1)
+60.0: (start_move robot1 room1_1 room1_2)
+60.0: -----waiting---- [63.0]
+63.0: (deliver_med robot1 med2 patient2 room1_2)
+63.0: (start_move robot1 room1_2 room1_3)
+63.0: -----waiting---- [66.0]
+66.0: (deliver_med robot1 med3 patient3 room1_3)
+66.0: (start_move robot1 room1_3 room1_4)
+66.0: -----waiting---- [69.0]
+69.0: (deliver_med robot1 med4 patient4 room1_4)
+69.0: (enter_elevator robot1 elevator1 room1_4 floor1)
+69.0: (start_elevator_move elevator1 floor1 floor0)
+69.0: -----waiting---- [75.0]
+75.0: (exit_elevator robot1 elevator1 robot_room floor0)

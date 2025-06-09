@@ -1,0 +1,510 @@
+[
+  {
+    "action": "move",
+    "robot": "robot1",
+    "from": "robot_room",
+    "to": "storage"
+  },
+  {
+    "action": "load_med",
+    "robot": "robot1",
+    "medicine": "med1_2",
+    "from": "storage",
+    "floor": "floor1"
+  },
+  {
+    "action": "load_med",
+    "robot": "robot1",
+    "medicine": "med1_3",
+    "from": "storage",
+    "floor": "floor1"
+  },
+  {
+    "action": "load_med",
+    "robot": "robot1",
+    "medicine": "med1_4",
+    "from": "storage",
+    "floor": "floor1"
+  },
+  {
+    "action": "load_med",
+    "robot": "robot1",
+    "medicine": "med1_1",
+    "from": "storage",
+    "floor": "floor1"
+  },
+  {
+    "action": "enter_elevator",
+    "robot": "robot1",
+    "elevator": "elevator1",
+    "location": "storage",
+    "floor": "floor0"
+  },
+  {
+    "action": "move",
+    "robot": "robot2",
+    "from": "robot_room",
+    "to": "storage"
+  },
+  {
+    "action": "load_med",
+    "robot": "robot2",
+    "medicine": "med2_2",
+    "from": "storage",
+    "floor": "floor2"
+  },
+  {
+    "action": "load_med",
+    "robot": "robot2",
+    "medicine": "med2_3",
+    "from": "storage",
+    "floor": "floor2"
+  },
+  {
+    "action": "load_med",
+    "robot": "robot2",
+    "medicine": "med2_4",
+    "from": "storage",
+    "floor": "floor2"
+  },
+  {
+    "action": "load_med",
+    "robot": "robot2",
+    "medicine": "med2_1",
+    "from": "storage",
+    "floor": "floor2"
+  },
+  {
+    "action": "enter_elevator",
+    "robot": "robot2",
+    "elevator": "elevator1",
+    "location": "storage",
+    "floor": "floor0"
+  },
+  {
+    "action": "move",
+    "robot": "robot3",
+    "from": "robot_room",
+    "to": "storage"
+  },
+  {
+    "action": "load_med",
+    "robot": "robot3",
+    "medicine": "med3_2",
+    "from": "storage",
+    "floor": "floor3"
+  },
+  {
+    "action": "load_med",
+    "robot": "robot3",
+    "medicine": "med3_3",
+    "from": "storage",
+    "floor": "floor3"
+  },
+  {
+    "action": "load_med",
+    "robot": "robot3",
+    "medicine": "med3_4",
+    "from": "storage",
+    "floor": "floor3"
+  },
+  {
+    "action": "load_med",
+    "robot": "robot3",
+    "medicine": "med3_1",
+    "from": "storage",
+    "floor": "floor3"
+  },
+  {
+    "action": "enter_elevator",
+    "robot": "robot3",
+    "elevator": "elevator1",
+    "location": "storage",
+    "floor": "floor0"
+  },
+  {
+    "action": "move",
+    "robot": "robot4",
+    "from": "robot_room",
+    "to": "storage"
+  },
+  {
+    "action": "load_med",
+    "robot": "robot4",
+    "medicine": "med4_2",
+    "from": "storage",
+    "floor": "floor4"
+  },
+  {
+    "action": "load_med",
+    "robot": "robot4",
+    "medicine": "med4_3",
+    "from": "storage",
+    "floor": "floor4"
+  },
+  {
+    "action": "load_med",
+    "robot": "robot4",
+    "medicine": "med4_4",
+    "from": "storage",
+    "floor": "floor4"
+  },
+  {
+    "action": "load_med",
+    "robot": "robot4",
+    "medicine": "med4_1",
+    "from": "storage",
+    "floor": "floor4"
+  },
+  {
+    "action": "enter_elevator",
+    "robot": "robot4",
+    "elevator": "elevator1",
+    "location": "storage",
+    "floor": "floor0"
+  },
+  {
+    "action": "move_elevator",
+    "elevator": "elevator1",
+    "from": "floor0",
+    "to": "floor1"
+  },
+  {
+    "action": "exit_elevator",
+    "robot": "robot1",
+    "elevator": "elevator1",
+    "location": "room1_1",
+    "floor": "floor1"
+  },
+  {
+    "action": "deliver_priority_med",
+    "robot": "robot1",
+    "medicine": "med1_1",
+    "patient": "patient1_1",
+    "to": "room1_1",
+    "floor": "floor1"
+  },
+  {
+    "action": "move",
+    "robot": "robot1",
+    "from": "room1_1",
+    "to": "room1_2"
+  },
+  {
+    "action": "deliver_med",
+    "robot": "robot1",
+    "medicine": "med1_2",
+    "patient": "patient1_2",
+    "to": "room1_2",
+    "floor": "floor1"
+  },
+  {
+    "action": "move",
+    "robot": "robot1",
+    "from": "room1_2",
+    "to": "room1_3"
+  },
+  {
+    "action": "deliver_med",
+    "robot": "robot1",
+    "medicine": "med1_3",
+    "patient": "patient1_3",
+    "to": "room1_3",
+    "floor": "floor1"
+  },
+  {
+    "action": "move",
+    "robot": "robot1",
+    "from": "room1_3",
+    "to": "room1_4"
+  },
+  {
+    "action": "deliver_med",
+    "robot": "robot1",
+    "medicine": "med1_4",
+    "patient": "patient1_4",
+    "to": "room1_4",
+    "floor": "floor1"
+  },
+  {
+    "action": "enter_elevator",
+    "robot": "robot1",
+    "elevator": "elevator1",
+    "location": "room1_4",
+    "floor": "floor1"
+  },
+  {
+    "action": "move_elevator",
+    "elevator": "elevator1",
+    "from": "floor1",
+    "to": "floor0"
+  },
+  {
+    "action": "exit_elevator",
+    "robot": "robot1",
+    "elevator": "elevator1",
+    "location": "robot_room",
+    "floor": "floor0"
+  },
+  {
+    "action": "move_elevator",
+    "elevator": "elevator1",
+    "from": "floor0",
+    "to": "floor1"
+  },
+  {
+    "action": "move_elevator",
+    "elevator": "elevator1",
+    "from": "floor1",
+    "to": "floor2"
+  },
+  {
+    "action": "exit_elevator",
+    "robot": "robot2",
+    "elevator": "elevator1",
+    "location": "room2_1",
+    "floor": "floor2"
+  },
+  {
+    "action": "deliver_priority_med",
+    "robot": "robot2",
+    "medicine": "med2_1",
+    "patient": "patient2_1",
+    "to": "room2_1",
+    "floor": "floor2"
+  },
+  {
+    "action": "move",
+    "robot": "robot2",
+    "from": "room2_1",
+    "to": "room2_2"
+  },
+  {
+    "action": "deliver_med",
+    "robot": "robot2",
+    "medicine": "med2_2",
+    "patient": "patient2_2",
+    "to": "room2_2",
+    "floor": "floor2"
+  },
+  {
+    "action": "move",
+    "robot": "robot2",
+    "from": "room2_2",
+    "to": "room2_3"
+  },
+  {
+    "action": "deliver_med",
+    "robot": "robot2",
+    "medicine": "med2_3",
+    "patient": "patient2_3",
+    "to": "room2_3",
+    "floor": "floor2"
+  },
+  {
+    "action": "move",
+    "robot": "robot2",
+    "from": "room2_3",
+    "to": "room2_4"
+  },
+  {
+    "action": "deliver_med",
+    "robot": "robot2",
+    "medicine": "med2_4",
+    "patient": "patient2_4",
+    "to": "room2_4",
+    "floor": "floor2"
+  },
+  {
+    "action": "move_elevator",
+    "elevator": "elevator1",
+    "from": "floor2",
+    "to": "floor3"
+  },
+  {
+    "action": "exit_elevator",
+    "robot": "robot3",
+    "elevator": "elevator1",
+    "location": "room3_1",
+    "floor": "floor3"
+  },
+  {
+    "action": "deliver_priority_med",
+    "robot": "robot3",
+    "medicine": "med3_1",
+    "patient": "patient3_1",
+    "to": "room3_1",
+    "floor": "floor3"
+  },
+  {
+    "action": "move",
+    "robot": "robot3",
+    "from": "room3_1",
+    "to": "room3_2"
+  },
+  {
+    "action": "deliver_med",
+    "robot": "robot3",
+    "medicine": "med3_2",
+    "patient": "patient3_2",
+    "to": "room3_2",
+    "floor": "floor3"
+  },
+  {
+    "action": "move",
+    "robot": "robot3",
+    "from": "room3_2",
+    "to": "room3_3"
+  },
+  {
+    "action": "deliver_med",
+    "robot": "robot3",
+    "medicine": "med3_3",
+    "patient": "patient3_3",
+    "to": "room3_3",
+    "floor": "floor3"
+  },
+  {
+    "action": "move",
+    "robot": "robot3",
+    "from": "room3_3",
+    "to": "room3_4"
+  },
+  {
+    "action": "deliver_med",
+    "robot": "robot3",
+    "medicine": "med3_4",
+    "patient": "patient3_4",
+    "to": "room3_4",
+    "floor": "floor3"
+  },
+  {
+    "action": "move_elevator",
+    "elevator": "elevator1",
+    "from": "floor3",
+    "to": "floor4"
+  },
+  {
+    "action": "exit_elevator",
+    "robot": "robot4",
+    "elevator": "elevator1",
+    "location": "room4_1",
+    "floor": "floor4"
+  },
+  {
+    "action": "deliver_priority_med",
+    "robot": "robot4",
+    "medicine": "med4_1",
+    "patient": "patient4_1",
+    "to": "room4_1",
+    "floor": "floor4"
+  },
+  {
+    "action": "move",
+    "robot": "robot4",
+    "from": "room4_1",
+    "to": "room4_2"
+  },
+  {
+    "action": "deliver_med",
+    "robot": "robot4",
+    "medicine": "med4_2",
+    "patient": "patient4_2",
+    "to": "room4_2",
+    "floor": "floor4"
+  },
+  {
+    "action": "move",
+    "robot": "robot4",
+    "from": "room4_2",
+    "to": "room4_3"
+  },
+  {
+    "action": "deliver_med",
+    "robot": "robot4",
+    "medicine": "med4_3",
+    "patient": "patient4_3",
+    "to": "room4_3",
+    "floor": "floor4"
+  },
+  {
+    "action": "move",
+    "robot": "robot4",
+    "from": "room4_3",
+    "to": "room4_4"
+  },
+  {
+    "action": "deliver_med",
+    "robot": "robot4",
+    "medicine": "med4_4",
+    "patient": "patient4_4",
+    "to": "room4_4",
+    "floor": "floor4"
+  },
+  {
+    "action": "enter_elevator",
+    "robot": "robot4",
+    "elevator": "elevator1",
+    "location": "room4_4",
+    "floor": "floor4"
+  },
+  {
+    "action": "move_elevator",
+    "elevator": "elevator1",
+    "from": "floor4",
+    "to": "floor3"
+  },
+  {
+    "action": "enter_elevator",
+    "robot": "robot3",
+    "elevator": "elevator1",
+    "location": "room3_4",
+    "floor": "floor3"
+  },
+  {
+    "action": "move_elevator",
+    "elevator": "elevator1",
+    "from": "floor3",
+    "to": "floor2"
+  },
+  {
+    "action": "enter_elevator",
+    "robot": "robot2",
+    "elevator": "elevator1",
+    "location": "room2_4",
+    "floor": "floor2"
+  },
+  {
+    "action": "move_elevator",
+    "elevator": "elevator1",
+    "from": "floor2",
+    "to": "floor1"
+  },
+  {
+    "action": "move_elevator",
+    "elevator": "elevator1",
+    "from": "floor1",
+    "to": "floor0"
+  },
+  {
+    "action": "exit_elevator",
+    "robot": "robot2",
+    "elevator": "elevator1",
+    "location": "robot_room",
+    "floor": "floor0"
+  },
+  {
+    "action": "exit_elevator",
+    "robot": "robot3",
+    "elevator": "elevator1",
+    "location": "robot_room",
+    "floor": "floor0"
+  },
+  {
+    "action": "exit_elevator",
+    "robot": "robot4",
+    "elevator": "elevator1",
+    "location": "robot_room",
+    "floor": "floor0"
+  }
+]

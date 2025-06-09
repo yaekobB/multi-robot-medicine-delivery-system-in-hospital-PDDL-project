@@ -1,0 +1,282 @@
+Found Plan:
+0: (enter_elevator robot2 elevator1 robot_room floor0)
+0: (enter_elevator robot4 elevator1 robot_room floor0)
+0: (enter_elevator robot1 elevator1 robot_room floor0)
+0: (enter_elevator robot3 elevator1 robot_room floor0)
+0: (exit_elevator robot3 elevator1 storage floor0)
+0: (load_med robot3 med3_3 storage floor3)
+0: (load_med robot3 med3_2 storage floor3)
+0: (enter_elevator robot3 elevator1 storage floor0)
+0: (exit_elevator robot1 elevator1 storage floor0)
+0: (load_med robot1 med1_4 storage floor1)
+0: (load_med robot1 med1_2 storage floor1)
+0: (enter_elevator robot1 elevator1 storage floor0)
+0: (exit_elevator robot4 elevator1 storage floor0)
+0: (load_med robot4 med4_4 storage floor4)
+0: (load_med robot4 med4_2 storage floor4)
+0: (enter_elevator robot4 elevator1 storage floor0)
+0: (exit_elevator robot2 elevator1 storage floor0)
+0: (start_elevator_move elevator1 floor0 floor1)
+0: (load_med robot2 med2_1 storage floor2)
+0: (load_med robot2 med2_3 storage floor2)
+0: (load_med robot2 med2_2 storage floor2)
+0: (load_med robot2 med2_4 storage floor2)
+0: -----waiting---- [10.0]
+10.0: (start_move robot2 storage robot_room)
+10.0: -----waiting---- [15.0]
+15.0: (exit_elevator robot1 elevator1 room1_2 floor1)
+15.0: (deliver_med robot1 med1_2 patient1_2 room1_2 floor1)
+15.0: (enter_elevator robot1 elevator1 room1_2 floor1)
+15.0: (start_elevator_move elevator1 floor1 floor0)
+15.0: -----waiting---- [25.0]
+25.0: (enter_elevator robot2 elevator1 robot_room floor0)
+25.0: (start_elevator_move elevator1 floor0 floor1)
+25.0: -----waiting---- [35.0]
+35.0: (exit_elevator robot1 elevator1 room1_4 floor1)
+35.0: (deliver_med robot1 med1_4 patient1_4 room1_4 floor1)
+35.0: (enter_elevator robot1 elevator1 room1_4 floor1)
+35.0: (start_elevator_move elevator1 floor1 floor2)
+35.0: -----waiting---- [45.0]
+45.0: (exit_elevator robot2 elevator1 room2_3 floor2)
+45.0: (deliver_med robot2 med2_3 patient2_3 room2_3 floor2)
+45.0: (enter_elevator robot2 elevator1 room2_3 floor2)
+45.0: (exit_elevator robot2 elevator1 room2_1 floor2)
+45.0: (deliver_med robot2 med2_1 patient2_1 room2_1 floor2)
+45.0: (enter_elevator robot2 elevator1 room2_1 floor2)
+45.0: (start_elevator_move elevator1 floor2 floor1)
+45.0: -----waiting---- [55.0]
+55.0: (start_elevator_move elevator1 floor1 floor0)
+55.0: -----waiting---- [65.0]
+65.0: (exit_elevator robot1 elevator1 storage floor0)
+65.0: (start_elevator_move elevator1 floor0 floor1)
+65.0: (load_med robot1 med1_1 storage floor1)
+65.0: (load_med robot1 med1_3 storage floor1)
+65.0: -----waiting---- [75.0]
+75.0: (start_move robot1 storage robot_room)
+75.0: -----waiting---- [80.0]
+80.0: (start_elevator_move elevator1 floor1 floor2)
+80.0: -----waiting---- [90.0]
+90.0: (exit_elevator robot2 elevator1 room2_4 floor2)
+90.0: (deliver_med robot2 med2_4 patient2_4 room2_4 floor2)
+90.0: (enter_elevator robot2 elevator1 room2_4 floor2)
+90.0: (exit_elevator robot2 elevator1 room2_2 floor2)
+90.0: (deliver_med robot2 med2_2 patient2_2 room2_2 floor2)
+90.0: (enter_elevator robot2 elevator1 room2_2 floor2)
+90.0: (start_elevator_move elevator1 floor2 floor1)
+90.0: -----waiting---- [100.0]
+100.0: (start_elevator_move elevator1 floor1 floor0)
+100.0: -----waiting---- [110.0]
+110.0: (enter_elevator robot1 elevator1 robot_room floor0)
+110.0: (exit_elevator robot2 elevator1 robot_room floor0)
+110.0: (start_elevator_move elevator1 floor0 floor1)
+110.0: -----waiting---- [120.0]
+120.0: (start_move robot2 robot_room storage)
+120.0: -----waiting---- [121.0]
+121.0: (exit_elevator robot1 elevator1 room1_3 floor1)
+121.0: (deliver_med robot1 med1_3 patient1_3 room1_3 floor1)
+121.0: (enter_elevator robot1 elevator1 room1_3 floor1)
+121.0: (exit_elevator robot1 elevator1 room1_1 floor1)
+121.0: (deliver_med robot1 med1_1 patient1_1 room1_1 floor1)
+121.0: (enter_elevator robot1 elevator1 room1_1 floor1)
+121.0: -----waiting---- [123.0]
+123.0: (start_elevator_move elevator1 floor1 floor2)
+123.0: -----waiting---- [125.0]
+125.0: (start_move robot2 storage robot_room)
+125.0: -----waiting---- [133.0]
+133.0: (start_elevator_move elevator1 floor2 floor3)
+133.0: -----waiting---- [143.0]
+143.0: (exit_elevator robot3 elevator1 room3_3 floor3)
+143.0: (deliver_med robot3 med3_3 patient3_3 room3_3 floor3)
+143.0: (enter_elevator robot3 elevator1 room3_3 floor3)
+143.0: (start_elevator_move elevator1 floor3 floor2)
+143.0: -----waiting---- [153.0]
+153.0: (start_elevator_move elevator1 floor2 floor1)
+153.0: -----waiting---- [163.0]
+163.0: (start_elevator_move elevator1 floor1 floor0)
+163.0: -----waiting---- [173.0]
+173.0: (exit_elevator robot1 elevator1 robot_room floor0)
+173.0: (start_elevator_move elevator1 floor0 floor1)
+173.0: -----waiting---- [183.0]
+183.0: (start_elevator_move elevator1 floor1 floor2)
+183.0: -----waiting---- [193.0]
+193.0: (start_elevator_move elevator1 floor2 floor3)
+193.0: -----waiting---- [200.0]
+200.0: (start_move robot2 robot_room storage)
+200.0: -----waiting---- [202.0]
+202.0: (start_move robot1 robot_room storage)
+202.0: -----waiting---- [203.0]
+203.0: (exit_elevator robot3 elevator1 room3_2 floor3)
+203.0: (deliver_med robot3 med3_2 patient3_2 room3_2 floor3)
+203.0: (enter_elevator robot3 elevator1 room3_2 floor3)
+203.0: -----waiting---- [205.0]
+205.0: (start_move robot2 storage robot_room)
+205.0: (start_elevator_move elevator1 floor3 floor2)
+205.0: -----waiting---- [207.0]
+207.0: (start_move robot1 storage robot_room)
+207.0: -----waiting---- [215.0]
+215.0: (start_elevator_move elevator1 floor2 floor1)
+215.0: -----waiting---- [225.0]
+225.0: (start_elevator_move elevator1 floor1 floor0)
+225.0: -----waiting---- [232.0]
+232.0: (start_move robot2 robot_room storage)
+232.0: -----waiting---- [235.0]
+235.0: (exit_elevator robot3 elevator1 storage floor0)
+235.0: (load_med robot3 med3_4 storage floor3)
+235.0: (load_med robot3 med3_1 storage floor3)
+235.0: (enter_elevator robot3 elevator1 storage floor0)
+235.0: (start_elevator_move elevator1 floor0 floor1)
+235.0: -----waiting---- [237.0]
+237.0: (start_move robot2 storage robot_room)
+237.0: -----waiting---- [245.0]
+245.0: (start_elevator_move elevator1 floor1 floor2)
+245.0: -----waiting---- [250.0]
+250.0: (start_move robot2 robot_room storage)
+250.0: -----waiting---- [251.0]
+251.0: (start_move robot1 robot_room storage)
+251.0: -----waiting---- [255.0]
+255.0: (start_move robot2 storage robot_room)
+255.0: (start_elevator_move elevator1 floor2 floor3)
+255.0: -----waiting---- [256.0]
+256.0: (start_move robot1 storage robot_room)
+256.0: -----waiting---- [265.0]
+265.0: (exit_elevator robot3 elevator1 room3_1 floor3)
+265.0: (deliver_med robot3 med3_1 patient3_1 room3_1 floor3)
+265.0: (enter_elevator robot3 elevator1 room3_1 floor3)
+265.0: (exit_elevator robot3 elevator1 room3_4 floor3)
+265.0: (deliver_med robot3 med3_4 patient3_4 room3_4 floor3)
+265.0: (enter_elevator robot3 elevator1 room3_4 floor3)
+265.0: (start_elevator_move elevator1 floor3 floor2)
+265.0: -----waiting---- [275.0]
+275.0: (start_elevator_move elevator1 floor2 floor1)
+275.0: -----waiting---- [285.0]
+285.0: (start_elevator_move elevator1 floor1 floor0)
+285.0: -----waiting---- [295.0]
+295.0: (exit_elevator robot3 elevator1 robot_room floor0)
+295.0: (start_elevator_move elevator1 floor0 floor1)
+295.0: -----waiting---- [305.0]
+305.0: (start_elevator_move elevator1 floor1 floor2)
+305.0: -----waiting---- [315.0]
+315.0: (start_elevator_move elevator1 floor2 floor3)
+315.0: -----waiting---- [325.0]
+325.0: (start_elevator_move elevator1 floor3 floor4)
+325.0: -----waiting---- [331.0]
+331.0: (start_move robot1 robot_room storage)
+331.0: (start_move robot2 robot_room storage)
+331.0: -----waiting---- [334.0]
+334.0: (start_move robot3 robot_room storage)
+334.0: -----waiting---- [335.0]
+335.0: (exit_elevator robot4 elevator1 room4_2 floor4)
+335.0: (deliver_med robot4 med4_2 patient4_2 room4_2 floor4)
+335.0: (enter_elevator robot4 elevator1 room4_2 floor4)
+335.0: -----waiting---- [336.0]
+336.0: (start_move robot1 storage robot_room)
+336.0: -----waiting---- [337.0]
+337.0: (start_elevator_move elevator1 floor4 floor3)
+337.0: -----waiting---- [338.0]
+338.0: (start_move robot2 storage robot_room)
+338.0: -----waiting---- [339.0]
+339.0: (start_move robot3 storage robot_room)
+339.0: -----waiting---- [347.0]
+347.0: (start_elevator_move elevator1 floor3 floor2)
+347.0: -----waiting---- [357.0]
+357.0: (start_elevator_move elevator1 floor2 floor1)
+357.0: -----waiting---- [367.0]
+367.0: (start_elevator_move elevator1 floor1 floor0)
+367.0: -----waiting---- [375.0]
+375.0: (start_move robot3 robot_room storage)
+375.0: (start_move robot2 robot_room storage)
+375.0: -----waiting---- [377.0]
+377.0: (enter_elevator robot1 elevator1 robot_room floor0)
+377.0: (exit_elevator robot4 elevator1 storage floor0)
+377.0: (load_med robot4 med4_1 storage floor4)
+377.0: (enter_elevator robot4 elevator1 storage floor0)
+377.0: (exit_elevator robot1 elevator1 robot_room floor0)
+377.0: (start_move robot1 robot_room storage)
+377.0: -----waiting---- [379.0]
+379.0: (start_elevator_move elevator1 floor0 floor1)
+379.0: -----waiting---- [380.0]
+380.0: (start_move robot3 storage robot_room)
+380.0: (start_move robot2 storage robot_room)
+380.0: -----waiting---- [382.0]
+382.0: (start_move robot1 storage robot_room)
+382.0: -----waiting---- [389.0]
+389.0: (start_elevator_move elevator1 floor1 floor2)
+389.0: -----waiting---- [399.0]
+399.0: (start_elevator_move elevator1 floor2 floor3)
+399.0: -----waiting---- [409.0]
+409.0: (start_elevator_move elevator1 floor3 floor4)
+409.0: -----waiting---- [415.0]
+415.0: (start_move robot1 robot_room storage)
+415.0: (start_move robot2 robot_room storage)
+415.0: -----waiting---- [416.0]
+416.0: (start_move robot3 robot_room storage)
+416.0: -----waiting---- [419.0]
+419.0: (exit_elevator robot4 elevator1 room4_4 floor4)
+419.0: (deliver_med robot4 med4_4 patient4_4 room4_4 floor4)
+419.0: (enter_elevator robot4 elevator1 room4_4 floor4)
+419.0: -----waiting---- [420.0]
+420.0: (start_move robot1 storage robot_room)
+420.0: (start_move robot2 storage robot_room)
+420.0: -----waiting---- [421.0]
+421.0: (start_move robot3 storage robot_room)
+421.0: (start_elevator_move elevator1 floor4 floor3)
+421.0: -----waiting---- [431.0]
+431.0: (start_elevator_move elevator1 floor3 floor2)
+431.0: -----waiting---- [441.0]
+441.0: (start_elevator_move elevator1 floor2 floor1)
+441.0: -----waiting---- [451.0]
+451.0: (start_elevator_move elevator1 floor1 floor0)
+451.0: -----waiting---- [457.0]
+457.0: (start_move robot1 robot_room storage)
+457.0: -----waiting---- [458.0]
+458.0: (start_move robot3 robot_room storage)
+458.0: -----waiting---- [461.0]
+461.0: (enter_elevator robot2 elevator1 robot_room floor0)
+461.0: (exit_elevator robot4 elevator1 storage floor0)
+461.0: (load_med robot4 med4_3 storage floor4)
+461.0: (enter_elevator robot4 elevator1 storage floor0)
+461.0: (exit_elevator robot2 elevator1 robot_room floor0)
+461.0: -----waiting---- [462.0]
+462.0: (enter_elevator robot1 elevator1 storage floor0)
+462.0: (exit_elevator robot1 elevator1 robot_room floor0)
+462.0: (start_elevator_move elevator1 floor0 floor1)
+462.0: -----waiting---- [463.0]
+463.0: (start_move robot3 storage robot_room)
+463.0: -----waiting---- [472.0]
+472.0: (start_elevator_move elevator1 floor1 floor2)
+472.0: -----waiting---- [482.0]
+482.0: (start_elevator_move elevator1 floor2 floor3)
+482.0: -----waiting---- [492.0]
+492.0: (start_elevator_move elevator1 floor3 floor4)
+492.0: -----waiting---- [498.0]
+498.0: (start_move robot2 robot_room storage)
+498.0: -----waiting---- [499.0]
+499.0: (start_move robot1 robot_room storage)
+499.0: -----waiting---- [500.0]
+500.0: (start_move robot3 robot_room storage)
+500.0: -----waiting---- [502.0]
+502.0: (exit_elevator robot4 elevator1 room4_3 floor4)
+502.0: (deliver_med robot4 med4_3 patient4_3 room4_3 floor4)
+502.0: (enter_elevator robot4 elevator1 room4_3 floor4)
+502.0: (exit_elevator robot4 elevator1 room4_1 floor4)
+502.0: (deliver_med robot4 med4_1 patient4_1 room4_1 floor4)
+502.0: (enter_elevator robot4 elevator1 room4_1 floor4)
+502.0: (start_elevator_move elevator1 floor4 floor3)
+502.0: -----waiting---- [503.0]
+503.0: (start_move robot2 storage robot_room)
+503.0: -----waiting---- [504.0]
+504.0: (start_move robot1 storage robot_room)
+504.0: -----waiting---- [505.0]
+505.0: (start_move robot3 storage robot_room)
+505.0: -----waiting---- [512.0]
+512.0: (start_elevator_move elevator1 floor3 floor2)
+512.0: -----waiting---- [522.0]
+522.0: (start_elevator_move elevator1 floor2 floor1)
+522.0: -----waiting---- [532.0]
+532.0: (start_elevator_move elevator1 floor1 floor0)
+532.0: -----waiting---- [539.0]
+539.0: (start_move robot2 robot_room storage)
+539.0: (start_move robot3 robot_room storage)
+539.0: (start_move robot1 robot_room storage)
+539.0: -----waiting---- [542.0]
+542.0: (exit_elevator robot4 elevator1 robot_room floor0)

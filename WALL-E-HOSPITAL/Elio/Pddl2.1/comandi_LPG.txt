@@ -1,0 +1,9 @@
+Usare solver LPG direttamente da WSL Ubuntu 
+cd unige-aai/planners/LPG
+make
+./lpg++ \
+  -o /mnt/c/Users/Utente/OneDrive/Desktop/Progetto\ Maratea/WALL-E-HOSPITAL/Elio/Pddl2.1/domain_pddl2.1.pddl \
+  -f /mnt/c/Users/Utente/OneDrive/Desktop/Progetto\ Maratea/WALL-E-HOSPITAL/Elio/Pddl2.1/problem_pddl2.1.pddl \
+  -n 1
+
+./lpg++   -o /mnt/c/Users/Utente/OneDrive/Desktop/Progetto\ Maratea/WALL-E-HOSPITAL/Elio/Pddl2.1/domain_hospital_temporal.pddl   -f /mnt/c/Users/Utente/OneDrive/Desktop/Progetto\ Maratea/WALL-E-HOSPITAL/Elio/Pddl2.1/problem_hospital_temporal.pddl   -n 1 -search_steps 180
