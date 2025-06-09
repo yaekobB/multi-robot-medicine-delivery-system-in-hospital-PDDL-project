@@ -1,8 +1,0 @@
-Progetto WALL-E-HOSPITAL : 
-
-Cose da rivedere --> 
-1)Scrivere unico file per ogni robot oppure scrivere domain/problem per ogni robot ? 
-2) Stato della batteria per i robot usando il tempo per esempio 12 ore , come definirla  in pddl tramite azione o ?
-3) Utilizzo di pddl Stream ?
-4)Creazione gestionale per monitorare che la consegna sia avvenuta con successo (aggiuntivo : tramite gestionale verificare anche i parametri vitali del paziente cosi da avere un report dettagliato e rendere piu efficiente il lavoro del medico7infermiere)
-5)Agente LLM per la supervisione dello stato di batteria di un robot e planimetria ospedale o planimetria per piano per robot.
