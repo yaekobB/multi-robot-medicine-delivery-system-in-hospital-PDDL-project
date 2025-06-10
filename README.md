@@ -4,7 +4,7 @@ This guide provides step-by-step instructions for installing and using two PDDL 
 
 ## Table of Contents
 1. [Prerequisites](#prerequisites)
-2. [LPG++ Installation (PDDL 2.1 Numeric)](#lpg-installation)
+2. [LPG++ Installation (PDDL 2.1 Temporal)](#lpg-installation)
    - [System Setup](#system-setup)
    - [Toolchain Installation](#toolchain-installation)
    - [Source Download](#source-download)
@@ -28,7 +28,7 @@ This guide provides step-by-step instructions for installing and using two PDDL 
   - For ENHSP: OpenJDK 17 (JRE and JDK).
 - **PDDL Files**: Ensure you have valid `domain.pddl` and `problem.pddl` files for testing.
 
-## LPG++ Installation (PDDL 2.1 Numeric)
+## LPG++ Installation (PDDL 2.1 Temporal)
 
 ### System Setup
 #### For Windows (WSL2)
