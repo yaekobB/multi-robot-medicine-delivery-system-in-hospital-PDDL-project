@@ -1,6 +1,6 @@
 # PDDL Planners Installation and Usage Guide
 
-This guide provides step-by-step instructions for installing and using two PDDL planners: **LPG++** (for PDDL 2.1 Numeric) and **ENHSP** (for PDDL+). It supports both Windows (via WSL) and native Linux (Ubuntu/Debian) environments.
+This guide provides step-by-step instructions for installing and using two PDDL planners: **LPG++** (for PDDL 2.1 Temporal) and **ENHSP** (for PDDL+). It supports both Windows (via WSL) and native Linux (Ubuntu/Debian) environments.
 
 ## Table of Contents
 1. [Prerequisites](#prerequisites)
