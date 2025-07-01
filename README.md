@@ -1,7 +1,5 @@
 # Hospital Multi-Robot Medicine Delivery System (PDDL) 
 
-📄 **[Download Full Technical Report (PDF)](https://github.com/AInsteinGroup/WALL-E-HOSPITAL/blob/main/WALL-E-HOSPITAL/pddl_hospital_robot_implementation_report.pdf)**
-
 This project presents a Planning Domain Definition Language (PDDL)-based simulation of a hospital environment where autonomous robots deliver medicines across multiple floors using a shared elevator. The system models operational constraints like robot/elevator capacity, patient-specific delivery, and urgent medicine prioritization.
 
 ## 🔍 Overview
