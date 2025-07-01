@@ -1,3 +1,4 @@
+[📄 Project Report (PDF)](https://github.com/AInsteinGroup/WALL-E-HOSPITAL/blob/main/WALL-E-HOSPITAL/pddl_hospital_robot_implementation_report.pdf)
 # PDDL Planners Installation and Usage Guide
 
 This guide provides step-by-step instructions for installing and using two PDDL planners: **LPG++** (for PDDL 2.1 Temporal) and **ENHSP** (for PDDL+). It supports both Windows (via WSL) and native Linux (Ubuntu/Debian) environments.
