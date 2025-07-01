@@ -1,4 +1,38 @@
-[📄 Project Report (PDF)](https://github.com/AInsteinGroup/WALL-E-HOSPITAL/blob/main/WALL-E-HOSPITAL/pddl_hospital_robot_implementation_report.pdf)
+# Hospital Multi-Robot Medicine Delivery System (PDDL) 
+
+📄 **[Download Full Technical Report (PDF)](https://github.com/AInsteinGroup/WALL-E-HOSPITAL/blob/main/WALL-E-HOSPITAL/pddl_hospital_robot_implementation_report.pdf)**
+
+This project presents a Planning Domain Definition Language (PDDL)-based simulation of a hospital environment where autonomous robots deliver medicines across multiple floors using a shared elevator. The system models operational constraints like robot/elevator capacity, patient-specific delivery, and urgent medicine prioritization.
+
+## 🔍 Overview
+
+- **Scenario**: 4 robots deliver 16 medicines (4 per floor) to patients across 4 floors, then return to base floor to robot room.
+- **Goal**: Deliver all medicines efficiently and return the robot to robot room, while minimizing total cost and respecting operational constraints.
+- **Tech**: Modeled using four PDDL variants to explore trade-offs in realism, performance, and planner compatibility.
+
+## 🧠 PDDL Variants
+
+| Variant           | Key Features                              | Planner     |
+|------------------|--------------------------------------------|-------------|
+| PDDL 1.2 (STRIPS)| High compatibility, urgent delivery logic  | [LAMA](https://editor.planning.domains/) |
+| PDDL 2.1         | Numeric fluents for load tracking          | [ENHSP](https://gitlab.com/enricos83/ENHSP-Public) |
+| PDDL 2.1 Temporal| Durative actions, concurrency, cost model  | [LPG++](https://github.com/matteocarde/unige-aai/tree/master/planners/LPG) |
+| PDDL+            | Processes/events, realism, battery-aware   | [ENHSP](https://gitlab.com/enricos83/ENHSP-Public) |
+
+## 📂 Structure
+
+- `Boolean/` – Boolean logic version for baseline STRIPS model  
+- `Numeric_SenzaTemporal/` – PDDL 2.1 with numeric fluents, no temporal extensions  
+- `Pddl2.1/` – PDDL 2.1 with numeric fluents and action durations  
+- `Priority/` – STRIPS version with priority-based delivery model  
+- `Pddl+/` – Basic PDDL+ version with continuous processes  
+- `Pddl+_Battery/8Pazienti/` – Advanced PDDL+ model with battery constraints and 8 patients  
+- `pddl2.1_Battery/` – PDDL 2.1 with custom battery consumption modeling  
+- 📄 [`pddl_hospital_robot_implementation_report.pdf`](https://github.com/AInsteinGroup/WALL-E-HOSPITAL/blob/main/WALL-E-HOSPITAL/pddl_hospital_robot_implementation_report.pdf) – Full technical report
+
+
+## 🚀 How to Run
+
 # PDDL Planners Installation and Usage Guide
 
 This guide provides step-by-step instructions for installing and using two PDDL planners: **LPG++** (for PDDL 2.1 Temporal) and **ENHSP** (for PDDL+). It supports both Windows (via WSL) and native Linux (Ubuntu/Debian) environments.
