@@ -1,6 +1,6 @@
 # Hospital Multi-Robot Medicine Delivery System (PDDL) 
 
-*This is my course project for [Course Name], done in collaboration with [Name 1], [Name 2], and Yaekob Beyene.*
+*This is my course project for Automated Planning, done in collaboration with two other group members.*
 
 This project presents a Planning Domain Definition Language (PDDL)-based simulation of a hospital environment where autonomous robots deliver medicines across multiple floors using a shared elevator. The system models operational constraints like robot/elevator capacity, patient-specific delivery, and urgent medicine prioritization.
 
